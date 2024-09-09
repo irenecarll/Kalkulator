@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <label> Bil 1 </label>
+        <input type="number" id="inputan1" />
+
+        <br> <br>
+        <label> Bil 2 </label>
+        <input type="number" id="inputan2" />
+
+        <br> <br>
+        <label> Hasil </label>
+        <input type="number" id="hasil" readonly />
+
+        <br> <br>
+        <button type="button"
+            onclick='tambah("hasil", document.getElementById("inputan1").value, document.getElementById("inputan2").value)'>
+            + </button>
+        <button type="button"
+            onclick='kurang("hasil", document.getElementById("inputan1").value, document.getElementById("inputan2").value)'>
+            - </button>
+        <button type="button"
+            onclick='kali("hasil", document.getElementById("inputan1").value, document.getElementById("inputan2").value)'>
+            * </button>
+        <button type="button"
+            onclick='bagi("hasil", document.getElementById("inputan1").value, document.getElementById("inputan2").value)'>
+            / </button>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
